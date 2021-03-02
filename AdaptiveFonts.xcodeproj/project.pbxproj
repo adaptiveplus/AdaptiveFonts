@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		6BA44D34C3A6632D222E2EE3 /* Pods_AdaptiveFonts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE56F9A2047EA103DA4F6809 /* Pods_AdaptiveFonts.framework */; };
 		F5DC3DF025EE1703003D55D4 /* AdaptiveFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC3DEE25EE1703003D55D4 /* AdaptiveFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5DC3E0025EE1785003D55D4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DF725EE1785003D55D4 /* Storage.swift */; };
-		F5DC3E0125EE1785003D55D4 /* FontDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DF825EE1785003D55D4 /* FontDownloader.swift */; };
-		F5DC3E0225EE1785003D55D4 /* NameDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DF925EE1785003D55D4 /* NameDictionary.swift */; };
-		F5DC3E0325EE1785003D55D4 /* FontOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFA25EE1785003D55D4 /* FontOperation.swift */; };
-		F5DC3E0425EE1785003D55D4 /* AdaptiveFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFB25EE1785003D55D4 /* AdaptiveFonts.swift */; };
-		F5DC3E0525EE1785003D55D4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFC25EE1785003D55D4 /* Result.swift */; };
-		F5DC3E0625EE1785003D55D4 /* FontRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFD25EE1785003D55D4 /* FontRegister.swift */; };
-		F5DC3E0725EE1785003D55D4 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFE25EE1785003D55D4 /* Font.swift */; };
-		F5DC3E0825EE1785003D55D4 /* GoogleFontsMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFF25EE1785003D55D4 /* GoogleFontsMetadata.swift */; };
+		F5DC3E2125EE3701003D55D4 /* AdaptiveFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2025EE3701003D55D4 /* AdaptiveFonts.swift */; };
+		F5DC3E2325EE3714003D55D4 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2225EE3714003D55D4 /* Font.swift */; };
+		F5DC3E2525EE3732003D55D4 /* FontDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2425EE3732003D55D4 /* FontDownloader.swift */; };
+		F5DC3E2725EE3741003D55D4 /* FontOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2625EE3741003D55D4 /* FontOperation.swift */; };
+		F5DC3E2925EE374F003D55D4 /* FontRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2825EE374F003D55D4 /* FontRegister.swift */; };
+		F5DC3E2B25EE3761003D55D4 /* GoogleFontsMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2A25EE3761003D55D4 /* GoogleFontsMetadata.swift */; };
+		F5DC3E2D25EE376F003D55D4 /* NameDictionaryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2C25EE376F003D55D4 /* NameDictionaryProtocol.swift */; };
+		F5DC3E2F25EE377F003D55D4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2E25EE377F003D55D4 /* Result.swift */; };
+		F5DC3E3125EE3790003D55D4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E3025EE3790003D55D4 /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,15 +27,15 @@
 		F5DC3DEB25EE1703003D55D4 /* AdaptiveFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdaptiveFonts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DC3DEE25EE1703003D55D4 /* AdaptiveFonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdaptiveFonts.h; sourceTree = "<group>"; };
 		F5DC3DEF25EE1703003D55D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5DC3DF725EE1785003D55D4 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		F5DC3DF825EE1785003D55D4 /* FontDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontDownloader.swift; sourceTree = "<group>"; };
-		F5DC3DF925EE1785003D55D4 /* NameDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameDictionary.swift; sourceTree = "<group>"; };
-		F5DC3DFA25EE1785003D55D4 /* FontOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontOperation.swift; sourceTree = "<group>"; };
-		F5DC3DFB25EE1785003D55D4 /* AdaptiveFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveFonts.swift; sourceTree = "<group>"; };
-		F5DC3DFC25EE1785003D55D4 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		F5DC3DFD25EE1785003D55D4 /* FontRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontRegister.swift; sourceTree = "<group>"; };
-		F5DC3DFE25EE1785003D55D4 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		F5DC3DFF25EE1785003D55D4 /* GoogleFontsMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleFontsMetadata.swift; sourceTree = "<group>"; };
+		F5DC3E2025EE3701003D55D4 /* AdaptiveFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveFonts.swift; sourceTree = "<group>"; };
+		F5DC3E2225EE3714003D55D4 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		F5DC3E2425EE3732003D55D4 /* FontDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDownloader.swift; sourceTree = "<group>"; };
+		F5DC3E2625EE3741003D55D4 /* FontOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontOperation.swift; sourceTree = "<group>"; };
+		F5DC3E2825EE374F003D55D4 /* FontRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontRegister.swift; sourceTree = "<group>"; };
+		F5DC3E2A25EE3761003D55D4 /* GoogleFontsMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleFontsMetadata.swift; sourceTree = "<group>"; };
+		F5DC3E2C25EE376F003D55D4 /* NameDictionaryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDictionaryProtocol.swift; sourceTree = "<group>"; };
+		F5DC3E2E25EE377F003D55D4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F5DC3E3025EE3790003D55D4 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,28 +88,27 @@
 		F5DC3DED25EE1703003D55D4 /* AdaptiveFonts */ = {
 			isa = PBXGroup;
 			children = (
-				F5DC3DF625EE1785003D55D4 /* Modules */,
+				F5DC3E1F25EE36ED003D55D4 /* Modules */,
 				F5DC3DEE25EE1703003D55D4 /* AdaptiveFonts.h */,
 				F5DC3DEF25EE1703003D55D4 /* Info.plist */,
 			);
 			path = AdaptiveFonts;
 			sourceTree = "<group>";
 		};
-		F5DC3DF625EE1785003D55D4 /* Modules */ = {
+		F5DC3E1F25EE36ED003D55D4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F5DC3DF725EE1785003D55D4 /* Storage.swift */,
-				F5DC3DF825EE1785003D55D4 /* FontDownloader.swift */,
-				F5DC3DF925EE1785003D55D4 /* NameDictionary.swift */,
-				F5DC3DFA25EE1785003D55D4 /* FontOperation.swift */,
-				F5DC3DFB25EE1785003D55D4 /* AdaptiveFonts.swift */,
-				F5DC3DFC25EE1785003D55D4 /* Result.swift */,
-				F5DC3DFD25EE1785003D55D4 /* FontRegister.swift */,
-				F5DC3DFE25EE1785003D55D4 /* Font.swift */,
-				F5DC3DFF25EE1785003D55D4 /* GoogleFontsMetadata.swift */,
+				F5DC3E2025EE3701003D55D4 /* AdaptiveFonts.swift */,
+				F5DC3E2225EE3714003D55D4 /* Font.swift */,
+				F5DC3E2425EE3732003D55D4 /* FontDownloader.swift */,
+				F5DC3E2625EE3741003D55D4 /* FontOperation.swift */,
+				F5DC3E2825EE374F003D55D4 /* FontRegister.swift */,
+				F5DC3E2A25EE3761003D55D4 /* GoogleFontsMetadata.swift */,
+				F5DC3E2C25EE376F003D55D4 /* NameDictionaryProtocol.swift */,
+				F5DC3E2E25EE377F003D55D4 /* Result.swift */,
+				F5DC3E3025EE3790003D55D4 /* Storage.swift */,
 			);
-			name = Modules;
-			path = ../../Work/AdaptiveFonts/AdaptiveFonts/Modules;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +155,7 @@
 				TargetAttributes = {
 					F5DC3DEA25EE1703003D55D4 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -217,15 +217,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5DC3E0525EE1785003D55D4 /* Result.swift in Sources */,
-				F5DC3E0625EE1785003D55D4 /* FontRegister.swift in Sources */,
-				F5DC3E0025EE1785003D55D4 /* Storage.swift in Sources */,
-				F5DC3E0425EE1785003D55D4 /* AdaptiveFonts.swift in Sources */,
-				F5DC3E0825EE1785003D55D4 /* GoogleFontsMetadata.swift in Sources */,
-				F5DC3E0725EE1785003D55D4 /* Font.swift in Sources */,
-				F5DC3E0225EE1785003D55D4 /* NameDictionary.swift in Sources */,
-				F5DC3E0325EE1785003D55D4 /* FontOperation.swift in Sources */,
-				F5DC3E0125EE1785003D55D4 /* FontDownloader.swift in Sources */,
+				F5DC3E3125EE3790003D55D4 /* Storage.swift in Sources */,
+				F5DC3E2125EE3701003D55D4 /* AdaptiveFonts.swift in Sources */,
+				F5DC3E2525EE3732003D55D4 /* FontDownloader.swift in Sources */,
+				F5DC3E2925EE374F003D55D4 /* FontRegister.swift in Sources */,
+				F5DC3E2D25EE376F003D55D4 /* NameDictionaryProtocol.swift in Sources */,
+				F5DC3E2725EE3741003D55D4 /* FontOperation.swift in Sources */,
+				F5DC3E2B25EE3761003D55D4 /* GoogleFontsMetadata.swift in Sources */,
+				F5DC3E2F25EE377F003D55D4 /* Result.swift in Sources */,
+				F5DC3E2325EE3714003D55D4 /* Font.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2DF245667C0596BE7676A5C /* Pods-AdaptiveFonts.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -373,6 +374,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54425BE0EFD0F3D663AD9DFA /* Pods-AdaptiveFonts.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
