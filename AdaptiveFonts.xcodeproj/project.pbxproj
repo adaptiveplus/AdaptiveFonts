@@ -7,13 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BA44D34C3A6632D222E2EE3 /* Pods_AdaptiveFonts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE56F9A2047EA103DA4F6809 /* Pods_AdaptiveFonts.framework */; };
 		F5DC3DF025EE1703003D55D4 /* AdaptiveFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC3DEE25EE1703003D55D4 /* AdaptiveFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5DC3E0025EE1785003D55D4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DF725EE1785003D55D4 /* Storage.swift */; };
+		F5DC3E0125EE1785003D55D4 /* FontDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DF825EE1785003D55D4 /* FontDownloader.swift */; };
+		F5DC3E0225EE1785003D55D4 /* NameDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DF925EE1785003D55D4 /* NameDictionary.swift */; };
+		F5DC3E0325EE1785003D55D4 /* FontOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFA25EE1785003D55D4 /* FontOperation.swift */; };
+		F5DC3E0425EE1785003D55D4 /* AdaptiveFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFB25EE1785003D55D4 /* AdaptiveFonts.swift */; };
+		F5DC3E0525EE1785003D55D4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFC25EE1785003D55D4 /* Result.swift */; };
+		F5DC3E0625EE1785003D55D4 /* FontRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFD25EE1785003D55D4 /* FontRegister.swift */; };
+		F5DC3E0725EE1785003D55D4 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFE25EE1785003D55D4 /* Font.swift */; };
+		F5DC3E0825EE1785003D55D4 /* GoogleFontsMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3DFF25EE1785003D55D4 /* GoogleFontsMetadata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54425BE0EFD0F3D663AD9DFA /* Pods-AdaptiveFonts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaptiveFonts.release.xcconfig"; path = "Target Support Files/Pods-AdaptiveFonts/Pods-AdaptiveFonts.release.xcconfig"; sourceTree = "<group>"; };
+		CE56F9A2047EA103DA4F6809 /* Pods_AdaptiveFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdaptiveFonts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DF245667C0596BE7676A5C /* Pods-AdaptiveFonts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaptiveFonts.debug.xcconfig"; path = "Target Support Files/Pods-AdaptiveFonts/Pods-AdaptiveFonts.debug.xcconfig"; sourceTree = "<group>"; };
 		F5DC3DEB25EE1703003D55D4 /* AdaptiveFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdaptiveFonts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DC3DEE25EE1703003D55D4 /* AdaptiveFonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdaptiveFonts.h; sourceTree = "<group>"; };
 		F5DC3DEF25EE1703003D55D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DC3DF725EE1785003D55D4 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		F5DC3DF825EE1785003D55D4 /* FontDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontDownloader.swift; sourceTree = "<group>"; };
+		F5DC3DF925EE1785003D55D4 /* NameDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameDictionary.swift; sourceTree = "<group>"; };
+		F5DC3DFA25EE1785003D55D4 /* FontOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontOperation.swift; sourceTree = "<group>"; };
+		F5DC3DFB25EE1785003D55D4 /* AdaptiveFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveFonts.swift; sourceTree = "<group>"; };
+		F5DC3DFC25EE1785003D55D4 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F5DC3DFD25EE1785003D55D4 /* FontRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontRegister.swift; sourceTree = "<group>"; };
+		F5DC3DFE25EE1785003D55D4 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		F5DC3DFF25EE1785003D55D4 /* GoogleFontsMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleFontsMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA44D34C3A6632D222E2EE3 /* Pods_AdaptiveFonts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		084992C0FC7D6463B8713981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE56F9A2047EA103DA4F6809 /* Pods_AdaptiveFonts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFAB30FD8175C53DF14912A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF245667C0596BE7676A5C /* Pods-AdaptiveFonts.debug.xcconfig */,
+				54425BE0EFD0F3D663AD9DFA /* Pods-AdaptiveFonts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F5DC3DE125EE1703003D55D4 = {
 			isa = PBXGroup;
 			children = (
 				F5DC3DED25EE1703003D55D4 /* AdaptiveFonts */,
 				F5DC3DEC25EE1703003D55D4 /* Products */,
+				DFAB30FD8175C53DF14912A0 /* Pods */,
+				084992C0FC7D6463B8713981 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +88,28 @@
 		F5DC3DED25EE1703003D55D4 /* AdaptiveFonts */ = {
 			isa = PBXGroup;
 			children = (
+				F5DC3DF625EE1785003D55D4 /* Modules */,
 				F5DC3DEE25EE1703003D55D4 /* AdaptiveFonts.h */,
 				F5DC3DEF25EE1703003D55D4 /* Info.plist */,
 			);
 			path = AdaptiveFonts;
+			sourceTree = "<group>";
+		};
+		F5DC3DF625EE1785003D55D4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC3DF725EE1785003D55D4 /* Storage.swift */,
+				F5DC3DF825EE1785003D55D4 /* FontDownloader.swift */,
+				F5DC3DF925EE1785003D55D4 /* NameDictionary.swift */,
+				F5DC3DFA25EE1785003D55D4 /* FontOperation.swift */,
+				F5DC3DFB25EE1785003D55D4 /* AdaptiveFonts.swift */,
+				F5DC3DFC25EE1785003D55D4 /* Result.swift */,
+				F5DC3DFD25EE1785003D55D4 /* FontRegister.swift */,
+				F5DC3DFE25EE1785003D55D4 /* Font.swift */,
+				F5DC3DFF25EE1785003D55D4 /* GoogleFontsMetadata.swift */,
+			);
+			name = Modules;
+			path = ../../Work/AdaptiveFonts/AdaptiveFonts/Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +130,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5DC3DF325EE1703003D55D4 /* Build configuration list for PBXNativeTarget "AdaptiveFonts" */;
 			buildPhases = (
+				FE575A4222E7DB87EBF672EC /* [CP] Check Pods Manifest.lock */,
 				F5DC3DE625EE1703003D55D4 /* Headers */,
 				F5DC3DE725EE1703003D55D4 /* Sources */,
 				F5DC3DE825EE1703003D55D4 /* Frameworks */,
@@ -126,11 +187,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FE575A4222E7DB87EBF672EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdaptiveFonts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5DC3DE725EE1703003D55D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DC3E0525EE1785003D55D4 /* Result.swift in Sources */,
+				F5DC3E0625EE1785003D55D4 /* FontRegister.swift in Sources */,
+				F5DC3E0025EE1785003D55D4 /* Storage.swift in Sources */,
+				F5DC3E0425EE1785003D55D4 /* AdaptiveFonts.swift in Sources */,
+				F5DC3E0825EE1785003D55D4 /* GoogleFontsMetadata.swift in Sources */,
+				F5DC3E0725EE1785003D55D4 /* Font.swift in Sources */,
+				F5DC3E0225EE1785003D55D4 /* NameDictionary.swift in Sources */,
+				F5DC3E0325EE1785003D55D4 /* FontOperation.swift in Sources */,
+				F5DC3E0125EE1785003D55D4 /* FontDownloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +354,7 @@
 		};
 		F5DC3DF425EE1703003D55D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2DF245667C0596BE7676A5C /* Pods-AdaptiveFonts.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -267,6 +363,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AdaptiveFonts/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -275,6 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = s10s.AdaptiveFonts;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -282,6 +380,7 @@
 		};
 		F5DC3DF525EE1703003D55D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54425BE0EFD0F3D663AD9DFA /* Pods-AdaptiveFonts.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -290,6 +389,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AdaptiveFonts/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,6 +398,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = s10s.AdaptiveFonts;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
