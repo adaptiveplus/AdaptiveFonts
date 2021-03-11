@@ -140,6 +140,5 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/
   spec.swift_version = "4.2"
   spec.ios.deployment_target = "11.0"
-  spec.dependency 'Alamofire', '~> 5.4.1'
 
 end
