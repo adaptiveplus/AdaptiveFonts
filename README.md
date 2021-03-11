@@ -48,7 +48,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 Now you are ready to use AdaptiveFonts with only one API to remember.
 
 ```swift
-let font = Font(family: "ABeeZee" variant: .regular)
+let font = Font(family: "ABeeZee", variant: .regular)
 let fontSize = 27
 AdaptiveFonts.shared.font(for: font, size: fontSize) { uifont in
     // Do something with the `uifont`.
