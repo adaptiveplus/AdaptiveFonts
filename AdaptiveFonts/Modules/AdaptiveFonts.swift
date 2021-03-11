@@ -20,7 +20,7 @@ public final class AdaptiveFonts {
         }
     }
 
-    private static let domain = "me.vinhis.Inkwell"
+    private static let domain = "AdaptiveFonts"
     private let queue: DispatchQueue
     private let storage: Storage
     private let nameDictionary: NameDictionary

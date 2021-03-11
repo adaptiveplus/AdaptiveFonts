@@ -5,12 +5,11 @@
 //  Created by Nurzhigit on 01.03.2021.
 //  Copyright © 2021 Sprint Squads. All rights reserved.
 //
-
-import Alamofire
-
+import UIKit
 /// The class to work Google Fonts API.
 /// This class is used to fetch Google Fonts metadata, i.e. list of fonts supported by Google Fonts.
 /// The metadata can be downloaded if no persisted file found or load locally.
+
 final class GoogleFontsMetadata {
     typealias JSON = [String: Any]
     typealias ItemsJSON = [ItemJSON]
@@ -41,34 +40,29 @@ final class GoogleFontsMetadata {
     ///
     /// - Parameter completion: The completion handler.
     /// - Returns: The download request.
-    func fetch(completion: @escaping (Result<FamilyDictionary>) -> Void) -> DownloadRequest {
-        let destination = DownloadRequest.suggestedDownloadDestination(for: .documentDirectory)
-
-        return AF.download(APIEndpoint,
-                                  method: .get,
-                                  parameters: ["key": APIKey],
-                                  encoding: URLEncoding.queryString,
-                                  headers: nil,
-                                  to: destination)
-            .validate(statusCode: 200..<300)
-            .validate(contentType: ["application/json"])
-            .responseJSON(queue: queue ?? DispatchQueue.main, options: .allowFragments) { response in
-                
-                let familyResponse = response.tryMap { json -> FamilyDictionary in
-                    guard let json = json as? JSON else { return [:] }
-
-                    return self.parse(json: json, variantFilter: self.defaultVariantFilter)
-                }
-
-                switch familyResponse.result {
-                case .success(let value):
-                    self.cache = value
-                    completion(.success(value))
-                case .failure(let error):
-                    self.storage.removeGoogleFontsMetadata()
+    func fetch(completion: @escaping (Result<FamilyDictionary>) -> Void) {
+        let sessionConfig = URLSessionConfiguration.default
+        let session = URLSession(configuration: sessionConfig)
+        var components = URLComponents(string: APIEndpoint)!
+        components.queryItems = [URLQueryItem(name: "key", value: APIKey)]
+        let request = URLRequest(url: components.url!)
+        
+        let task = session.dataTask(with: request) { data, response, error in
+            guard let data = data, let response = response as? HTTPURLResponse, (200 ..< 300) ~= response.statusCode,
+                error == nil
+                else {
                     completion(.failure(error))
-                }
+                    return
+            }
+            guard let responseObject = (try? JSONSerialization.jsonObject(with: data)) as? JSON else {
+                completion(.failure(error))
+                return
+            }
+            let cache = self.parse(json: responseObject, variantFilter: self.defaultVariantFilter)
+            self.cache = cache
+            completion(.success(cache))
         }
+        task.resume()
     }
 
     /// Get the family dictionary from persisted Google Fonts metadata file.

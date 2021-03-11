@@ -18,6 +18,7 @@
 		F5DC3E2D25EE376F003D55D4 /* NameDictionaryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2C25EE376F003D55D4 /* NameDictionaryProtocol.swift */; };
 		F5DC3E2F25EE377F003D55D4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E2E25EE377F003D55D4 /* Result.swift */; };
 		F5DC3E3125EE3790003D55D4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E3025EE3790003D55D4 /* Storage.swift */; };
+		F5DC3E3325EFB9FF003D55D4 /* AdaptiveFontsNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC3E3225EFB9FF003D55D4 /* AdaptiveFontsNetworkLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F5DC3E2C25EE376F003D55D4 /* NameDictionaryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDictionaryProtocol.swift; sourceTree = "<group>"; };
 		F5DC3E2E25EE377F003D55D4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F5DC3E3025EE3790003D55D4 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		F5DC3E3225EFB9FF003D55D4 /* AdaptiveFontsNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveFontsNetworkLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F5DC3E2025EE3701003D55D4 /* AdaptiveFonts.swift */,
+				F5DC3E3225EFB9FF003D55D4 /* AdaptiveFontsNetworkLayer.swift */,
 				F5DC3E2225EE3714003D55D4 /* Font.swift */,
 				F5DC3E2425EE3732003D55D4 /* FontDownloader.swift */,
 				F5DC3E2625EE3741003D55D4 /* FontOperation.swift */,
@@ -226,6 +229,7 @@
 				F5DC3E2B25EE3761003D55D4 /* GoogleFontsMetadata.swift in Sources */,
 				F5DC3E2F25EE377F003D55D4 /* Result.swift in Sources */,
 				F5DC3E2325EE3714003D55D4 /* Font.swift in Sources */,
+				F5DC3E3325EFB9FF003D55D4 /* AdaptiveFontsNetworkLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

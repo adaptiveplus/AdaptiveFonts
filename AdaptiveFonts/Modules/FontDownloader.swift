@@ -6,8 +6,6 @@
 //  Copyright © 2021 Sprint Squads. All rights reserved.
 //
 
-import Alamofire
-
 final class FontDownloader {
     private let storage: Storage
     private let queue: DispatchQueue?
@@ -16,6 +14,7 @@ final class FontDownloader {
         self.storage = storage
         self.queue = queue
     }
+    
 
     /// Download the font at specified URL.
     ///
@@ -24,18 +23,16 @@ final class FontDownloader {
     ///   - URL: The URL
     ///   - completion: The completion handler.
     /// - Returns: The download request.
-    func download(_ font: Font, at URL: URL, completion: @escaping (Result<URL>) -> Void) -> DownloadRequest {
+    func download(_ font: Font, at url: URL, completion: @escaping (Result<URL>) -> Void) {
         let storageURL = storage.URL(for: font)
         
-        let destination = DownloadRequest.suggestedDownloadDestination(for: .documentDirectory)
-
-        return AF.download(URL, to: destination)
-            .response(queue: queue ?? DispatchQueue.main) { response in
-                if let error = response.error {
-                    completion(.failure(error))
-                } else {
-                    completion(.success(storageURL))
-                }
+        AdaptiveFontsNetworkLayer.download(url: url, to: storageURL, httpType: .get) { (response) in
+            switch response {
+            case .failure(let error):
+                completion(.failure(error))
+            case .success(let urlPath):
+                completion(.success(urlPath))
+            }
         }
     }
 }

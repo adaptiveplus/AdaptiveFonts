@@ -6,8 +6,7 @@
 //  Copyright © 2021 Sprint Squads. All rights reserved.
 //
 
-import Alamofire
-
+import UIKit
 /// The font operation.
 public final class FontOperation {
     private let operation: InternalFontOperation
@@ -38,8 +37,6 @@ final class InternalFontOperation: Operation {
     private let size: CGFloat
     private let url: URL?
     private let completion: Completion
-    private var metadataRequest: DownloadRequest?
-    private var downloadRequest: DownloadRequest?
 
     // MARK: - Init
 
@@ -146,7 +143,7 @@ final class InternalFontOperation: Operation {
     // MARK: - Helpers
 
     private func fetchGoogleFontsMetadata(completion: @escaping (Result<GoogleFontsMetadata.FamilyDictionary>) -> Void) {
-        metadataRequest = googleFontsMetadata.fetch(completion: completion)
+        googleFontsMetadata.fetch(completion: completion)
     }
 
     private func download(_ font: Font,
@@ -167,8 +164,7 @@ final class InternalFontOperation: Operation {
 
             return
         }
-
-        downloadRequest = fontDownloader.download(font, at: url, completion: completion)
+        fontDownloader.download(font, at: url, completion: completion)
     }
 
     private func register(_ font: Font) {
@@ -202,4 +198,3 @@ final class InternalFontOperation: Operation {
         completion(nil)
     }
 }
-

@@ -16,7 +16,7 @@ public struct Font {
     /// - _700: Bold.
     /// - italic: Italic.
     /// - _700italic: BoldItalic.
-    public enum Variant: String {
+    public enum Variant: String, Codable {
         case thin = "100"
         case thinItalic = "100italic"
         case extralight = "200"
