@@ -40,7 +40,7 @@ public final class AdaptiveFonts {
         googleFontsMetadata = GoogleFontsMetadata(APIKey: APIKey, storage: storage, queue: queue)
         operationQueue = OperationQueue()
         operationQueue.name = AdaptiveFonts.domain
-        operationQueue.maxConcurrentOperationCount = 1
+        operationQueue.maxConcurrentOperationCount = 100
         operationQueue.qualityOfService = .utility
         operationQueue.underlyingQueue = queue
     }
