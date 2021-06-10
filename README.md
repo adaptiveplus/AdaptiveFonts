@@ -1,15 +1,13 @@
 # AdaptiveFonts
+<img src= "/font-schema.png" height = 400>
+
+
 ## Introduction
 
 In brief, AdaptiveFonts is a font library to use custom fonts on the fly. AdaptiveFonts takes responsibilities for:
 - [x] Downloading fonts from Google Fonts or custom resources.
 - [x] Registering custom fonts to the system.
 - [x] Loading and using custom fonts dynamically and seamlessly.
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the `Example` directory first.
-
 
 ## Installation
 
@@ -37,7 +35,7 @@ $ pod install
 
 ## Usage
 
-Firstly, set the Google API key in the app delegate.
+Firstly, set the [Google API](https://developers.google.com/fonts/docs/developer_api) key in the app delegate.
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
