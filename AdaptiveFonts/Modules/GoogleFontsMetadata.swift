@@ -17,8 +17,7 @@ final class GoogleFontsMetadata {
     typealias FilesJSON = [String: String]
     typealias FamilyDictionary = [String: [String]]
 
-    var APIKey: String
-    private let APIEndpoint = "https://www.googleapis.com/webfonts/v1/webfonts"
+    private let APIEndpoint = "https://api.adaptive.plus/v1/web-fonts"
     private let storage: Storage
     private let queue: DispatchQueue?
     private let defaultVariantFilter: (String) -> Bool = {
@@ -28,8 +27,7 @@ final class GoogleFontsMetadata {
     }
     private var cache: FamilyDictionary?
 
-    init(APIKey: String, storage: Storage, queue: DispatchQueue?) {
-        self.APIKey = APIKey
+    init(storage: Storage, queue: DispatchQueue?) {
         self.storage = storage
         self.queue = queue
     }
@@ -43,8 +41,7 @@ final class GoogleFontsMetadata {
     func fetch(completion: @escaping (Result<FamilyDictionary>) -> Void) {
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
-        var components = URLComponents(string: APIEndpoint)!
-        components.queryItems = [URLQueryItem(name: "key", value: APIKey)]
+        let components = URLComponents(string: APIEndpoint)!
         let request = URLRequest(url: components.url!)
         
         let task = session.dataTask(with: request) { data, response, error in

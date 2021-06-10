@@ -13,13 +13,6 @@ public final class AdaptiveFonts {
     /// The shared instance.
     public static let shared = AdaptiveFonts()
 
-    /// The Google API key used for Google Fonts.
-    public var APIKey: String = "" {
-        didSet {
-            googleFontsMetadata.APIKey = APIKey
-        }
-    }
-
     private static let domain = "AdaptiveFonts"
     private let queue: DispatchQueue
     private let storage: Storage
@@ -37,7 +30,7 @@ public final class AdaptiveFonts {
         nameDictionary = NameDictionary(storage: storage)
         fontRegister = FontRegister(storage: storage, nameDictionary: nameDictionary)
         fontDownloader = FontDownloader(storage: storage, queue: queue)
-        googleFontsMetadata = GoogleFontsMetadata(APIKey: APIKey, storage: storage, queue: queue)
+        googleFontsMetadata = GoogleFontsMetadata(storage: storage, queue: queue)
         operationQueue = OperationQueue()
         operationQueue.name = AdaptiveFonts.domain
         operationQueue.maxConcurrentOperationCount = 100
