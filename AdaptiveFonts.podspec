@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AdaptiveFonts"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "AdaptiveFonts is a font library to use custom fonts on the fly."
 
   # This description is used to generate tags and improve search results.
